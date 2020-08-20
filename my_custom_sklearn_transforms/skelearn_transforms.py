@@ -2,7 +2,8 @@
 
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.ensemble import GradientBoostingClassifier
-# Criação da árvore de decisão com a biblioteca ``scikit-learn``:
+
+dtc_model = GradientBoostingClassifier() 
 
 # All sklearn Transforms must have the `transform` and `fit` methods
 class DropColumns(BaseEstimator, TransformerMixin):
